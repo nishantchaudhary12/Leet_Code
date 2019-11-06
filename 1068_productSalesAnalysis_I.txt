@@ -1,0 +1,7 @@
+#Write an SQL query that reports all product names of the products in the Sales table along with their selling year and price.
+
+
+SELECT Product.product_name, Sales.year, Sales.price 
+FROM Product INNER JOIN Sales
+ON Product.product_id = Sales.product_id;
+
